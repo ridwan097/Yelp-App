@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 import {Feather} from '@expo/vector-icons';
-import yelp from '../api/yelp';
+
 
 const SearchBar = ({term, onTermChange, onTermSubmit}) =>{
     return (
@@ -29,11 +29,12 @@ const styles = StyleSheet.create({
         height: 50,
         borderRadius: 5,
         marginHorizontal: 15,        
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginBottom: 10,
     },
     inputStyle:{
-        borderColor: 'black',
-        borderWidth: 1,
+        // borderColor: 'black',
+        // borderWidth: 1,
         flex: 1,
     },
     iconStyle: {
